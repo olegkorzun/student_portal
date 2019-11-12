@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link  href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="css/calendar.css" rel="stylesheet">
+  <link href="css/login.css" rel="stylesheet">
+  <script src="vendor/moment/moment.js" defer></script>
+  <script src="js/init.js" defer></script>
+  <script src="js/controllers/Manager.js" defer></script>    
+  <script src="js/controllers/APIRequest.js" defer></script>
+  <script src="js/pages/login.js" defer></script>    
+  <script src="js/pages/Navbar.js" defer></script>  
+  <script src="js/pages/Calendar.js" defer></script>  
+  <script src="js/pages/Cources.js" defer></script>
+  <script src="js/pages/student.js" defer></script>
+</head>
+
+  <body id="page-top">
+    <div class="container-fluid" id="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+              <div class="row">
+                <div class="col-5" id="logo">
+                  <img src="img/rt.jpg">
+                </div>
+                <div class="col-7">
+                  <div class="p-5">
+                    <div class="text-center">
+                      <h1 class="h5 text-gray-900 mb-4">Student Application</h1>
+                    </div>
+                    <form class="user" id="frm">
+                      <input type="hidden" name="id" value="0" />
+                      <div class="form-group">
+                        <input type="email" class="form-control form-control-user" aria-describedby="emailHelp" placeholder="Enter Email Address..." name="email" />
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control form-control-user" name="password" placeholder="Password">
+                      </div>
+                      <div class="panel-body">
+                        <button type="submit" id="submit" class="btn btn-primary btn-user btn-block">Enter</button>
+                      </div>
+                      <p id="status"></p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

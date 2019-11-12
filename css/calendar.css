@@ -1,0 +1,13 @@
+
+.calendar-toolbar {
+    margin-bottom: 10px;
+  }
+  .calendar-month-row {
+    height: 75px;
+  }
+  .calendar-prior-months-date {
+    color: #DDD;
+  }
+  .calendar-current-date {
+    color: red;
+  }
