@@ -11,3 +11,12 @@ p {
     margin-right: 10px;
     margin-bottom: 20px;
 }
+
+footer {
+    margin-top: 70px;
+}
+
+.copyright {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

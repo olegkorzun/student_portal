@@ -19,11 +19,11 @@ class APIRequest {
             if (req.readyState == 4) {
                 this.data = req.response;
                 if (req.status == 200) {
-                    console.log('API request success: ',this.request);
+                    console.log('API request success. Status: ', req.status, + ' ' + req.statusText);
                     callback(true,this.data);
                 } else {
-                    console.log('API request Error: ',req.response);
-                    callback(false,this.data);
+                    console.log('API request Error: ',req);
+                    callback(false,req.status);
                 }
             }
         }

@@ -8,12 +8,17 @@ class Manager {
 
     initProject() {
         let start = new Login;
-        start.login((result)=>{
+        start.loginListen((result)=>{
             if (result) {
+                //Start Pages
                 let navbar = new Navbar;
                 navbar.show();
+                let routes = new Routes;
+                routes.ListenNavbarRoutes();
                 let student = new Student;
                 student.showStudentData();
+                let footer = new Footer;
+                footer.showFooter();
             }
         });
     }

@@ -1,8 +1,8 @@
 class Calendar  {
-    constuctor (data) {
+    constructor (data) {
         this.data = data;
+        this.datetime = null; 
     }
-    static datetime;
 
     showCalendar () {
         let container = document.getElementById("container");
@@ -123,5 +123,4 @@ class Calendar  {
             }
         }
     }
-    
 }

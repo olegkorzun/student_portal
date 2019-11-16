@@ -1,15 +1,16 @@
 class Cources {
     showCources () {
-        let courceObject = sessionStorage.getItem('cources');
+        let courceObject = sessionStorage.getItem('cources')
         let courceObjectArr = JSON.parse(courceObject);
         let container = document.getElementById("container");
+        //Clean Area
         while (container.firstChild) {
             container.removeChild(container.firstChild);
         }
+        //Page Title
         let page = document.createElement('div');
         page.className="text-center";
         container.appendChild(page);
-
         let h1 = document.createElement('h1');
         h1.className = 'page-header';
         page.appendChild(h1);
@@ -17,7 +18,7 @@ class Cources {
         i0.className = 'fa fa-book';
         i0.innerText ='  Student Cources';
         h1.appendChild(i0);
-
+        //Show Cources Data
         let table = document.createElement('TABLE');
         table.className = 'table table-striped table-hover';
         page.appendChild(table);
@@ -26,7 +27,6 @@ class Cources {
         let tr = document.createElement('TR');
         tr.className = 'd-flex justify-content-center';
         thead.appendChild(tr);
-        
         for (let key in courceObjectArr[0]) {
             let th = document.createElement('th');
             th.className = 'col-2';

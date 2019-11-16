@@ -27,12 +27,12 @@ class Student {
     }
 
     //Header
-    let page = document.createElement('div');
-    page.className='text-center';
-    container.appendChild(page);
+    let div = document.createElement('div');
+    div.className='text-center';
+    container.appendChild(div);
     let h1 = document.createElement('h1');
     h1.className = 'page-header';
-    page.appendChild(h1);
+    div.appendChild(h1);
     let i0 = document.createElement('i');
     i0.className = 'fa fa-file';
     i0.innerText ='  Student Data';
@@ -41,7 +41,7 @@ class Student {
     // Student Content
     let row = document.createElement('div');
     row.className='row justify-content-center';
-    page.appendChild(row);
+    div.appendChild(row);
     let col = document.createElement('div');
     col.className='col-md-4 mb-4';
     row.appendChild(col);
