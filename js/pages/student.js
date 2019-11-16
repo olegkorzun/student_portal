@@ -52,7 +52,7 @@ class Student {
     for (let key in studentObjectArr[0]) {
       let p = document.createElement('p');
       card.appendChild(p);
-      if (key == 'registeryDate') {
+      if ((key === 'registeryDate') && (studentObjectArr[0][key] !== null))  {
         p.appendChild(document.createTextNode(''+ key + ' : '+studentObjectArr[0][key].slice(0,10)));
       } else {
         p.appendChild(document.createTextNode(''+ key + ' : '+studentObjectArr[0][key]));
@@ -101,7 +101,11 @@ class Student {
         markConnt ++ ;
       }
     }
-    procent = Math.trunc( mark / markConnt);
+    if (markConnt != 0) {
+      procent = Math.trunc( mark / markConnt);
+    } else {
+      procent = 0;
+    }
     p = document.createElement('p');
     card.appendChild(p);
     p.appendChild(document.createTextNode('Average grade for exams'));
