@@ -20,6 +20,7 @@ class APIRequest {
                 this.data = req.response;
                 if (req.status == 200) {
                     console.log('API request success. Status: ', req.status, + ' ' + req.statusText);
+                    console.log(this.data);
                     callback(true,this.data);
                 } else {
                     console.log('API request Error: ',req);
