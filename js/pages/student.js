@@ -58,7 +58,6 @@ class Student {
         p.appendChild(document.createTextNode(''+ key + ' : '+studentObjectArr[0][key]));
       }
     }
-    //<span style="color:blue;">THIS</span>
 
     // Student Analytics
     col = document.createElement('div');

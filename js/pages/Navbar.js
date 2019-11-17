@@ -48,7 +48,7 @@ class Navbar {
         let a2 = document.createElement('a');
         a2.className = 'nav-item nav-link cources';
         a2.href = '#';
-        a2.innerText ='Cources';
+        a2.innerText ='Courses';
         div.appendChild(a2);
         let a3 = document.createElement('a');
         a3.className = 'nav-item nav-link calendar';

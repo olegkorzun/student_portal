@@ -16,7 +16,7 @@ class Cources {
         page.appendChild(h1);
         let i0 = document.createElement('i');
         i0.className = 'fa fa-book';
-        i0.innerText ='  Student Cources';
+        i0.innerText ='  Student Courses';
         h1.appendChild(i0);
         //Show Cources Data
         let table = document.createElement('TABLE');
